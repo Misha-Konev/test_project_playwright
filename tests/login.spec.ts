@@ -46,7 +46,7 @@ test.describe('Login tests for mageto web site', () => {
             userData.newPassword
         );
         await editAccountInformationPage.clickSaveBtn();
-        
+
         // waiting for loading Sign-in page
         await page.waitForSelector(signInPage.signInButton);
         await basePage.verifyPageTitleText(pageTitles.customerLogin);
