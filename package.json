@@ -1,6 +1,36 @@
 {
-  "name": "playwright_test_projectr",
-  "lockfileVersion": 3,
-  "requires": true,
-  "packages": {}
+  "name": "test_project_playwright",
+  "version": "1.0.0",
+  "description": "10 test cases in playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "allure": "allure serve",
+    "lint": "eslint --ext .ts .",
+    "lint-fix": "npm run lint -- --fix ",
+    "format": "npx prettier --write ./pages/ ./fixture/ ./data_folder/ ./tests/"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "allure-commandline": "^2.20.1",
+    "allure-playwright": "^2.0.0-beta.23"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@playwright/test": "^1.30.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^33.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4"
+  }
 }
