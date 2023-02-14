@@ -11,7 +11,8 @@
     "format": "npx prettier --write ./pages/ ./fixture/ ./data_folder/ ./tests/"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "directory": "git+https://github.com/Misha-Konev/test_project_playwright.git"
   },
   "author": "",
   "license": "ISC",
