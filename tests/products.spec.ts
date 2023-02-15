@@ -78,7 +78,7 @@ test.describe('Products tests for mageto web site', () => {
         await basePage.sortByValue(sort.productName);
         await basePage.verifyProductsAreSortedByProductNameAscending(false);
         await basePage.setSortingDirection(sortingDirections.descending);
-        await basePage.verifyProductsAreSortedByProductNameAscending();
+        await basePage.verifyProductsAreSortedByProductNameAscending(true);
     });
 
     test('C9 Submit the form with a non-existing order id and the rest valid data', async ({
