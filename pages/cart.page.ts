@@ -9,7 +9,7 @@ export default class CartPage {
     cartCountLocator = '.counter-number';
 
     async openCartPage() {
-        await this.page.waitForTimeout(2000);
+        await this.page.waitForTimeout(3000);
         await this.page.click(this.cartIconLocator);
         await this.page.click(this.openCartLink);
         await this.page.waitForLoadState();
