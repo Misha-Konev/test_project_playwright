@@ -31,7 +31,7 @@ const config: PlaywrightTestConfig = {
   workers: process.env.CI ? 3 : 2,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ['list'], 
+    ['list'],
     ['allure-playwright', {
       detail: false,
       suiteTitle: false

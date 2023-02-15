@@ -70,6 +70,7 @@ export default class BasePage {
     }
 
     async verifyProductsAreSortedByPriceAscending(condition = true) {
+        await this.page.waitForTimeout(3000);
         const actualPrices = await this.page
             .locator(this.productPricesLocator)
             .allTextContents();
@@ -85,6 +86,7 @@ export default class BasePage {
     }
 
     async verifyProductsAreSortedByProductNameAscending(condition = true) {
+        await this.page.waitForTimeout(3000);
         let actualNames = await this.page.locator(this.productNamesLocator).allTextContents();
         actualNames = actualNames
             .map((el: string) => el.replace(/^\s+|\s+$/g, ''))
